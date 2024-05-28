@@ -1,0 +1,16 @@
+[tool.poetry]
+name = "iris-flower-classification-with-dvc"
+version = "0.1.0"
+description = "Program to train an Iris flower classification model. Given length and with of sepals and petals, the model should be able to predict what species the Iris flower is between virginica, setosa and versicolor."
+authors = ["Eric Dasse <christ.gououi@gmail.com>"]
+license = "MIT"
+readme = "README.md"
+packages = [{ include = "iris_classification" }]
+
+[tool.poetry.dependencies]
+python = "^3.10"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
