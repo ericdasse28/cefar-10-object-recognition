@@ -7,6 +7,9 @@ license = "MIT"
 readme = "README.md"
 packages = [{ include = "iris_classification" }]
 
+[tool.poetry.scripts]
+evaluate = "iris_classification.evaluate:main"
+
 [tool.poetry.dependencies]
 python = "^3.10"
 pandas = "^2.2.2"
