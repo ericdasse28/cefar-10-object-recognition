@@ -1,5 +1,6 @@
 import argparse
 import joblib
+from loguru import logger
 import pandas as pd
 from sklearn.linear_model import LinearRegression
 
@@ -21,7 +22,11 @@ def main():
     parser.add_argument("--model-save-path")
     args = parser.parse_args()
 
+    logger.info(f"Loading training dataset from {args.train_dataset_path}")
     train_dataframe = pd.read_csv(args.train_dataset_path)
+
+    logger.info("Training...")
     trained_model = train(train_dataframe)
 
+    logger.info(f"Saving model at {args.model_save_path}")
     joblib.dump(trained_model, args.model_save_path)

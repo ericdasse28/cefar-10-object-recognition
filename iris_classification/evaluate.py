@@ -1,5 +1,6 @@
 import argparse
 import joblib
+from loguru import logger
 import pandas as pd
 from sklearn.metrics import accuracy_score, precision_score, recall_score
 
@@ -29,9 +30,12 @@ def main():
     parser = argparse.ArgumentParser()
     parser.add_argument("--model-path", "-m")
     parser.add_argument("--test-dataset-path", "-d")
-
     args = parser.parse_args()
+
+    logger.info(f"Loading model from {args.model_path}")
     iris_model = joblib.load(args.model_path)
+    logger.info(f"Loading test dataset from {args.test_dataset_path}")
     test_dataframe = pd.read_csv(args.test_dataset_path)
 
+    logger.info("Evaluating the model...")
     evaluate(iris_model, test_dataframe)
