@@ -9,6 +9,7 @@ packages = [{ include = "iris_classification" }]
 
 [tool.poetry.scripts]
 evaluate = "iris_classification.evaluate:main"
+train = "iris_classification.train:main"
 
 [tool.poetry.dependencies]
 python = "^3.10"
