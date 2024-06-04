@@ -35,7 +35,9 @@ def prepare(path_to_iris_data: Path) -> pd.DataFrame:
 
 def main():
 
-    parser = argparse.ArgumentParser()
+    parser = argparse.ArgumentParser(
+        description="Performs data preparation operations on an Iris dataset"
+    )
     parser.add_argument(
         "filename",
         help="Location of the original Iris dataset.",

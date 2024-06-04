@@ -27,7 +27,10 @@ def evaluate(iris_model, test_dataframe):
 
 
 def main():
-    parser = argparse.ArgumentParser()
+    parser = argparse.ArgumentParser(
+        description="Retrieves a model from a given location, apply it on a \
+test dataset and prints some evaluation metrics"
+    )
     parser.add_argument("--model-path", "-m")
     parser.add_argument("--test-dataset-path", "-d")
     args = parser.parse_args()

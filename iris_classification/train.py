@@ -17,7 +17,10 @@ def train(train_dataframe: pd.DataFrame):
 
 
 def main():
-    parser = argparse.ArgumentParser()
+    parser = argparse.ArgumentParser(
+        description="Performs training on an Iris dataset and \
+saves a model at a given location"
+    )
     parser.add_argument("--train-dataset-path")
     parser.add_argument("--model-save-path")
     args = parser.parse_args()
