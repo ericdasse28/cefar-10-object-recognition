@@ -1,7 +1,8 @@
 import argparse
+
 import joblib
-from loguru import logger
 import pandas as pd
+from loguru import logger
 from sklearn.metrics import accuracy_score, precision_score, recall_score
 
 
