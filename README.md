@@ -1,6 +1,4 @@
-# iris-flower-classification-with-dvc
-
-Introduction to data versioning with DVC through the "Hello World" of machine learning: Iris flower classification.
+# Object Recognition with CERFA-10 dataset
 
 ## Getting started
 
@@ -14,6 +12,6 @@ Introduction to data versioning with DVC through the "Hello World" of machine le
 
 Once you have installed the project dependencies and activated your virtual environment, you can use the following commands that were already implemented:
 
-- `prepare`: Performs data preparation operations on an Iris dataset
-- `train`: Performs training on an Iris dataset and saves a model at a given location
+- `prepare`: Performs data preparation operations on the CERFA-10 dataset
+- `train`: Performs training on an CERFA-10 dataset and saves a model at a given location
 - `evaluate`: Retrieves a model from a given location, apply it on a test dataset and prints some evaluation metrics (accuracy, precision and recall)
