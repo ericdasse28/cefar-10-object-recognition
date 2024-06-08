@@ -1,16 +1,16 @@
 [tool.poetry]
-name = "iris-flower-classification-with-dvc"
+name = "cefar-10-object-recognition"
 version = "0.1.0"
-description = "Program to train an Iris flower classification model. Given length and with of sepals and petals, the model should be able to predict what species the Iris flower is between virginica, setosa and versicolor."
+description = "Training for an object recognition model using CERFA-10 dataset."
 authors = ["Eric Dasse <christ.gououi@gmail.com>"]
 license = "MIT"
 readme = "README.md"
-packages = [{ include = "iris_classification" }]
+packages = [{ include = "cerfa_10_object_recognition" }]
 
 [tool.poetry.scripts]
-prepare = "iris_classification.prepare:main"
-train = "iris_classification.train:main"
-evaluate = "iris_classification.evaluate:main"
+prepare = "cerfa_10_object_recognition.prepare:main"
+train = "cerfa_10_object_recognition.train:main"
+evaluate = "cerfa_10_object_recognition.evaluate:main"
 
 [tool.poetry.dependencies]
 python = "^3.10"
