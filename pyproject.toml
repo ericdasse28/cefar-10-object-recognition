@@ -1,16 +1,16 @@
 [tool.poetry]
-name = "cefar-10-object-recognition"
+name = "cifar-10-object-recognition"
 version = "0.1.0"
-description = "Training for an object recognition model using CERFA-10 dataset."
+description = "Training for an object recognition model using CIFAR-10 dataset."
 authors = ["Eric Dasse <christ.gououi@gmail.com>"]
 license = "MIT"
 readme = "README.md"
-packages = [{ include = "cerfa_10_object_recognition" }]
+packages = [{ include = "cifar_10_object_recognition" }]
 
 [tool.poetry.scripts]
-prepare = "cerfa_10_object_recognition.prepare:main"
-train = "cerfa_10_object_recognition.train:main"
-evaluate = "cerfa_10_object_recognition.evaluate:main"
+prepare = "cifar_10_object_recognition.prepare:main"
+train = "cifar_10_object_recognition.train:main"
+evaluate = "cifar_10_object_recognition.evaluate:main"
 
 [tool.poetry.dependencies]
 python = "^3.10"
